@@ -56,7 +56,7 @@ export default async ({ params }: { params: { slug: string } }) => {
             </h2>
             {post && (
               <>
-                <div className="flex flex-col justify-between space-y-4 pb-8 md:flex-row md:space-y-0">
+                {/*  <div className="flex flex-col justify-between space-y-4 pb-8 md:flex-row md:space-y-0">
                   <div className="flex items-center space-x-2 text-zinc-500 dark:text-zinc-400 md:space-y-0">
                     <AuthorAvatar post={post} />
                     <AuthorAttribution post={post} />
@@ -67,7 +67,7 @@ export default async ({ params }: { params: { slug: string } }) => {
                         <Tag key={category.title}>{category.title}</Tag>
                       ))}
                   </div>
-                </div>
+                </div> */}
                 <hr className="w-full border-t border-zinc-300 pb-8 dark:border-zinc-700" />
                 <div
                   dangerouslySetInnerHTML={{
@@ -81,7 +81,7 @@ export default async ({ params }: { params: { slug: string } }) => {
               {suggestedPosts && (
                 <div className="flex w-full flex-col">
                   <h3 className="pb-3 text-xl font-semibold text-zinc-800 dark:text-zinc-200">
-                    Suggested Posts
+                    Suggestions
                   </h3>
                   <div className="flex flex-col space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                     {suggestedPosts

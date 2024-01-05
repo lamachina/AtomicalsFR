@@ -11,7 +11,7 @@ const cosmic = createBucketClient({
 });
 export default cosmic;
 
-export async function getGlobalData(): Promise<GlobalData> {
+/* export async function getGlobalData(): Promise<GlobalData> {
   // Get global data
   try {
     const data: any = await Promise.resolve(
@@ -29,7 +29,7 @@ export async function getGlobalData(): Promise<GlobalData> {
     console.log('Oof', error);
   }
   return Promise.resolve({} as GlobalData);
-}
+} */
 
 export async function getAllPosts(): Promise<Post[]> {
   try {

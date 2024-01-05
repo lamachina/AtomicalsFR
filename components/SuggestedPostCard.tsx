@@ -21,7 +21,7 @@ export default function PostCard({ post }: { post: Post }) {
       <h2 className="pb-3 text-xl font-semibold text-zinc-800 dark:text-zinc-200">
         <Link href={`/posts/${post.slug}`}>{post.title}</Link>
       </h2>
-      <div className="flex items-center space-x-2 text-zinc-500 dark:text-zinc-400">
+      {/*   <div className="flex items-center space-x-2 text-zinc-500 dark:text-zinc-400">
         <Link href={`/author/${post.metadata.author?.slug}`}>
           <Image
             className="h-8 w-8 rounded-full"
@@ -43,7 +43,7 @@ export default function PostCard({ post }: { post: Post }) {
             on {helpers.stringToFriendlyDate(post.metadata.published_date)}
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
