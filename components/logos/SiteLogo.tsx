@@ -10,12 +10,13 @@ export default function SiteLogo(): JSX.Element {
           href="/"
           className="bg-gradient-to-r from-zinc-700 to-cyan-900 bg-clip-text text-4xl font-bold tracking-tighter text-transparent dark:from-zinc-300 dark:to-blue-200"
         >
-          Atomicals France
+          <img className="h-10 w-10 rounded-full" src='/atomFR.png' />
         </Link>
+
       </h1>
-      <span className="relative hidden text-lg tracking-wide text-zinc-500 dark:text-zinc-200 md:flex">
-        <img className="h-8 w-8 rounded-full" src='/atomblack.jpg' />
-      </span>
+      {/*  <span className="relative hidden text-lg tracking-wide text-zinc-500 dark:text-zinc-200 md:flex">
+        <img className="h-12 w-12 rounded-full" src='/atomFR.png' />
+      </span> */}
     </div>
   );
 }
