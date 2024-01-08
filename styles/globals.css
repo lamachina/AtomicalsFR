@@ -14,4 +14,8 @@
   p {
     @apply pb-4 leading-relaxed tracking-normal text-zinc-600 last-of-type:pb-0 dark:text-zinc-400;
   }
+
+  a {
+    @apply break-all;
+  }
 }
