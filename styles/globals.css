@@ -16,6 +16,8 @@
   }
 
   a {
-    @apply break-all;
+    /* Custom style for word-wrap: break-word */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }

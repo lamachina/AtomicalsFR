@@ -31,7 +31,7 @@ export default async ({ params }: { params: { slug: string } }) => {
         <Image
           width={1400}
           height={720}
-          className="mb-5 h-[720px] w-full bg-no-repeat object-cover object-center"
+          className="mb-5 w-full bg-no-repeat object-contain object-center"
           src={`${post.metadata.hero?.imgix_url}?w=1400&auto=format`}
           priority
           alt={post.title}
@@ -56,7 +56,7 @@ export default async ({ params }: { params: { slug: string } }) => {
             </h2>
             {post && (
               <>
-                {/*  <div className="flex flex-col justify-between space-y-4 pb-8 md:flex-row md:space-y-0">
+                <div className="flex flex-col justify-between space-y-4 pb-8 md:flex-row md:space-y-0">
                   <div className="flex items-center space-x-2 text-zinc-500 dark:text-zinc-400 md:space-y-0">
                     <AuthorAvatar post={post} />
                     <AuthorAttribution post={post} />
@@ -67,7 +67,7 @@ export default async ({ params }: { params: { slug: string } }) => {
                         <Tag key={category.title}>{category.title}</Tag>
                       ))}
                   </div>
-                </div> */}
+                </div>
                 <hr className="w-full border-t border-zinc-300 pb-8 dark:border-zinc-700" />
                 <div
                   dangerouslySetInnerHTML={{
